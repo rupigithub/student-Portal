@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stdent Portal</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h3>Student Portal</h3>
+  </header>
+  <section class="search">
+    <div class="search-bar">
+        <input type="text">
+    </div>
+    <div class="search-button">
+        <button>Search</button>
+    </div>
+  </section>
+  <section class="selection">
+    <button onclick="sortByNameAToZ()">Sort A->Z</button>
+    <button onclick="sortByNameZToA()">Sort Z->A</button>
+    <button onclick="sortByMarks()">Sort By Marks</button>
+    <button onclick="sortByPassing()">Sort By Passing</button>
+    <button onclick="sortByClass()">Sort By Class</button>
+    <button onclick="sortByGender()">Sort By Gender</button>
+  </section> 
+  <section class="table-container">
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Class</th>
+            <th>Marks</th>
+            <th>Passing</th>
+            <th>Email</th>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+  </section>
+  <script src="script.js"></script> 
+  <a href="file.json" download></a>
+</body>
+</html>
